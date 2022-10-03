@@ -8,4 +8,4 @@ b = int(input())
 if (a <= b):
     f = a + 1
 else:
-    print(f)
+    print()
