@@ -1,0 +1,1 @@
+# 5. A number is given. Check whether it is a multiple of 5 and 10 or 15, but not 30
