@@ -1,0 +1,1 @@
+# Write a program that takes the coordinates of two points as input and finds the distance between them in 2D space.
