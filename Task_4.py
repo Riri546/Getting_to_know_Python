@@ -1,0 +1,1 @@
+# 4. Show the first digit of the fractional part of the number.
