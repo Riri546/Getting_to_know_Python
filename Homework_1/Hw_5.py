@@ -1,47 +1,22 @@
 # Write a program that takes the coordinates of two points as input and finds the distance between them in 2D space.
 
+import math
 
+print('Enter the coordinates of point a on the x axis: ')
+coord_x_point_a = int(input())
+print('Enter the coordinates of point b on the x axis:: ')
+coord_x_point_b = int(input())
+print('Enter the coordinates of point a on the y axis: ')
+coord_y_point_a = int(input())
+print('Enter the coordinates of point a on the y axis:: ')
+coord_y_point_b = int(input())
 
+length_A_B = 0
 
+# Calculates the distance between points A and B
+def Calculate(x_a, x_b, y_a, y_b, length):
+    length = math.sqrt((math.pow((x_a - x_b), 2) + math.pow((y_a  - y_b ), 2)))
+    print('Answer: ', length)
 
+Calculate(coord_x_point_a, coord_x_point_b,coord_y_point_a,coord_y_point_b, length_A_B)
 
-# Console.Clear();
-
-# int coordXPointA;
-# int coordXPointB;
-# int coordYPointA;
-# int coordYPointB;
-
-# double lengthAB;
-
-# //Reads coordinates of points A and B
-# void ReadDataOfPoint()
-# {
-#     Console.Write("Enter the X coordinate of point A: ");
-#     string inputNum1 = Console.ReadLine() ?? "";
-#     coordXPointA = int.Parse(inputNum1);
-
-#     Console.Write("Enter the Y coordinate of point A: ");
-#     string inputNum2 = Console.ReadLine() ?? "";
-#     coordYPointA = int.Parse(inputNum2);
-
-#     Console.Write("Enter the X coordinate of point B: ");
-#     string inputNum4 = Console.ReadLine() ?? "";
-#     coordXPointB = int.Parse(inputNum4);
-
-#     Console.Write("Enter the Y coordinate of point B: ");
-#     string inputNum5 = Console.ReadLine() ?? "";
-#     coordYPointB = int.Parse(inputNum5);
-# }
-
-
-# //Calculates the distance between points A and B
-# void ConculateLateLengthAB()
-# {
-#     lengthAB = Math.Sqrt(Math.Pow((coordXPointA - coordXPointB), 2) + Math.Pow((coordYPointA - coordYPointB), 2));
-# }
-
-# ReadDataOfPoint();
-# ConculateLateLengthAB();
-
-# Console.WriteLine(lengthAB);
