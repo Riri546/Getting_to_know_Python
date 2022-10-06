@@ -6,7 +6,7 @@ number_x = int(input())
 print('Enter the y coordinate: ')
 number_y = int(input())
 
-
+# Checking the condition
 def checking_condition(x, y):
     if x != 0 and y != 0:
         if x > 0 and y > 0:
