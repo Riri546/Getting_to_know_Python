@@ -10,13 +10,13 @@ number_y = int(input())
 def checking_condition(x, y):
     if x != 0 and y != 0:
         if x > 0 and y > 0:
-            print('This number is in the first quarter')
+            print('This point is in 1 quarter')
         if x < 0 and y > 0:
-            print('This number is in the second quarter')
+         print('This point is in 2 quarter')
         if x < 0 and y < 0:
-            print('This number is in the third quarter')
+            print('This point is in 3 quarter')
         if x > 0 and y < 0:
-            print('This number is in the fourth quarter')
+            print('This point is in 4 quarter')
     else:
         print('Error')
 
