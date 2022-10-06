@@ -3,6 +3,7 @@
 
 number = int(input("Enter the number of the day of the week: "))
 
+# Checking the condition
 def days(num):
     week = ['Monday', 'Tuesday', 'Wednesday',
             'Thursday', 'Friday', 'Saturday', 'Sunday']
