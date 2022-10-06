@@ -8,7 +8,7 @@ input_y = int(input())
 print('Enter the number z: ')
 input_z = int(input())
 
-
+# Checking the condition
 def verification(x, y, z):
     if not (x or y or z) == (not (x) and not (y) and not (z)):
         print("The statement is true")
