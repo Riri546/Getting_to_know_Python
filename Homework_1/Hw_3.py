@@ -6,82 +6,19 @@ number_x = int(input())
 print('Enter the y coordinate: ')
 number_y = int(input())
 
-def null(x, y):
+def checking_condition(x, y):
     if x!=0 and y!=0:
-        if x >0 and y >0
+        if x >0 and y >0:
+            print('This number is in the first quarter')
+        if x <0 and y >0:
+            print('This number is in the second quarter')
+        if x<0 and y<0:
+            print('This number is in the third quarter')
+        if x>0 and y<0:
+            print('This number is in the fourth quarter')
+    else:
+        print('Error')
+
+checking_condition(number_x, number_y)
 
 
-
-
-# def print_answer(num):
-#     if num == 1:
-#         print("Acceptable: x>0, y>0")
-#     if num == 2:
-#         print("Acceptable: x<0, y>0")
-#     if num ==3:
-#         print("Acceptable: x<0, y<0")
-#     if num ==4:
-#          print("Acceptable: x>0, y<0")
-#     if num >= 5:
-#         print("Error")
-
-
-
-
-# Console.Clear();
-
-# Console.Write("Enter a number: ");
-# string inputLine = Console.ReadLine() ?? "";
-
-# //The method reads the points and returns an array with it 
-# int[,] ReadPoint()
-# {
-#     string coordXLine = inputLine.Substring(0, inputLine.IndexOf(";"));
-#     coordXLine = coordXLine.Substring(coordXLine.IndexOf("=") + 1);
-
-#     string coordYLine = inputLine.Substring(inputLine.IndexOf(";") + 1);
-#     coordYLine = coordYLine.Substring(coordYLine.IndexOf("=") + 1);
-
-#     //Console.WriteLine(coordX+" "+coordY);
-
-#     int coordX = int.Parse(coordXLine);
-#     int coordY = int.Parse(coordYLine);
-
-#     int[,] arreyOut = new int[1, 2];
-#     arreyOut[0, 0] = coordX;
-#     arreyOut[0, 1] = coordY;
-
-#     return arreyOut;
-    
-# }
-
-# //Prints the quarter number
-# void PtintQuter(int[,] arreyPoint)
-# {
-#     if (arreyPoint[0, 0] > 0 && arreyPoint[0, 1] > 0)
-#     {
-#         Console.WriteLine("1 quarter");
-#     }
-
-#     if (arreyPoint[0, 0] < 0 && arreyPoint[0, 1] > 0)
-#     {
-#         Console.WriteLine("2 quarter");
-#     }
-
-#     if (arreyPoint[0, 0] < 0 && arreyPoint[0, 1] < 0)
-#     {
-#         Console.WriteLine("3 quarter");
-#     }
-
-#     if (arreyPoint[0, 0] > 0 && arreyPoint[0, 1] < 0)
-#     {
-#         Console.WriteLine("4 quarter");
-#     }
-
-# }
-
-# int[,] arreyPoint = ReadPoint();
-
-# PtintQuter(arreyPoint);
-
-# //ptintQuter (readPoint());
