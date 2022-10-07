@@ -2,9 +2,6 @@
 # Example:
 # - For n = 6: [4, 7, 10, 13, 16, 19]
 
-from unittest import result
-
-
 n = int(input('Enter the natural number n: '))
 result = []
 for i in range(1, n +1):
