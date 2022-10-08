@@ -3,7 +3,7 @@
 # N = 4, then [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
 number = int(input('Enter the natural number n: '))
-result = ''
+result = []
 
 
 def factorial(n):
@@ -11,6 +11,13 @@ def factorial(n):
         return 1
     else:
         return n*factorial(n-1)
-        
+    print (n[i])
+
+def print_list(n):
+    if factorial(n) !=0:
+        result = [factorial]
+    print(result)
+
 
 print(factorial(number))
+print(print_list(number))

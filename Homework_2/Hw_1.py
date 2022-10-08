@@ -3,10 +3,16 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
-number = str(input('Enter a real number: '))
+number = input('Enter the natural number n: ')
+sum = 0
 
-result = 0
+print(f'Source string: {number}')
+res_str = number.replace('.', '')
+# Deleting all '.'
+print(f'String after deleting all characters ".": {res_str}')
 
-for i in len(number):
-    result = number[i]+number[i+1]
-print('Answer {result}')
+for i in res_str:
+    if res_str != '.':
+        sum += int(i)
+
+print(f'Answer: {sum}')
