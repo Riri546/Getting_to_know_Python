@@ -18,8 +18,7 @@ def sum_number(l, pos_1, pos_2):
             count += l[i]
         if i == pos_2:
             count += l[i]
-    print(
-        f'The sum of the numbers standing by the index {position_1} and {position_2} = {count}')
+    print(f'The sum of the numbers standing by the index {position_1} and {position_2} = {count}')
 
 
 sum_number(list_num, position_1, position_2)
