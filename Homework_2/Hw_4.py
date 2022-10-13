@@ -11,14 +11,24 @@ list_num = [i for i in range(n_neg, n_pos+1)]
 print(list_num)
 
 
-def sum_number(l, pos_1, pos_2):
-    count = 0
-    for i in l:
-        if i == pos_1:
-            count += l[i]
-        if i == pos_2:
-            count += l[i]
-    print(f'The sum of the numbers standing by the index {position_1} and {position_2} = {count}')
+def mult_number(l, pos_1, pos_2):
+    mult = 1
+    for i in range(len(l)):
+            if i in (pos_1, pos_2):
+                mult *= l[i]
+    print(f'The product of the numbers standing by the index {pos_1} and {pos_2} = {mult}')
+
+mult_number(list_num, position_1, position_2)
 
 
-sum_number(list_num, position_1, position_2)
+# def sum_number(l, pos_1, pos_2):
+#     count = 0
+#     for i in l:
+#         if i == pos_1:
+#             count *= l[i]
+#         if i == pos_2:
+#             count *= l[i]
+#     print(f'The sum of the numbers standing by the index {position_1} and {position_2} = {count}')
+
+
+# sum_number(list_num, position_1, position_2)
