@@ -8,4 +8,5 @@ def fib(n):
         return fib(n-1) + fib(n-2)
 
 
+print('-' * 15)
 print(fib(4))
