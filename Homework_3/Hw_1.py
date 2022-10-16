@@ -9,12 +9,12 @@ print(int_list)
 
 
 def sum_list(int_l):
-    length = len(int_list)
+    length = len(int_l)
     print(f'List length = {length}')
     count = 0
     for i in length:
         if i%2 != 0:
-            count += int_l(i)
+            count += int_l
     print(f'Aswer: {count}')      
 
 sum_list(int_list)
