@@ -21,7 +21,7 @@ def negafibonacci(n):
         fibon_i = fibonacci(i)
         list_f.append(fibon_i)
         if i != 1:
-            list_f.insert(0, (-1) ** i * fibon_i)
+            list_f.insert(0, (-1) ** (i +1) * fibon_i)
     print(list_f)
 
 negafibonacci(num)
