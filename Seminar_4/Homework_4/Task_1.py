@@ -6,5 +6,5 @@ for element in input('Enter integers in the list separated by a space: ').split(
     us_list.append(int(element))
 print(us_list)
 
-print(f'Min: {min(us_list)}')
-print(f'Max: {max(us_list)}')
+print(f'Minimum value of the list: {min(us_list)}')
+print(f'Maximum value of the list: {max(us_list)}')
