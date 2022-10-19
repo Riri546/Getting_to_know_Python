@@ -2,6 +2,9 @@
 # 1) using mathematical formulas for finding the roots of a quadratic equation;
 # 2) using additional Python libraries.
 
+from tkinter import NO
+
+
 a = int(input('Enter the number a: '))
 b = int(input('Enter the number b: '))
 c = int(input('Enter the number c: '))
@@ -14,7 +17,7 @@ def difsciminant(linput_list):
     d = b ** 2 - 4 * a * c
     if d == 0:
         x1 =  -b / 2 * a 
-        return x1
+        return x1, None
     elif d > 0:
         x1 = (-b + d ** 0.5) / 2 * a
         x2 = (-b - d ** 0.5) / 2 * a
