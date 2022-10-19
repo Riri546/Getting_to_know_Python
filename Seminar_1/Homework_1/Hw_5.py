@@ -2,14 +2,10 @@
 
 import math
 
-print('Enter the coordinates of point a on the x axis: ')
-coord_x_point_a = int(input())
-print('Enter the coordinates of point b on the x axis:: ')
-coord_x_point_b = int(input())
-print('Enter the coordinates of point a on the y axis: ')
-coord_y_point_a = int(input())
-print('Enter the coordinates of point a on the y axis:: ')
-coord_y_point_b = int(input())
+coord_x_point_a = int(input('Enter the coordinates of point a on the x axis: '))
+coord_x_point_b = int(input('Enter the coordinates of point b on the x axis:: '))
+coord_y_point_a = int(input('Enter the coordinates of point a on the y axis: '))
+coord_y_point_b = int(input('Enter the coordinates of point a on the y axis: '))
 
 length_A_B = 0
 
