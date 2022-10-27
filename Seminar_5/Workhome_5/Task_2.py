@@ -1,4 +1,4 @@
-# # Candy game. Given N candies. 
+# 2. Candy game. Given N candies. 
 # Each player can take no more than M candies for each turn.
 # The player who took the last candy wins.
 # man vs man
