@@ -1,7 +1,6 @@
-# Игра с кончетами. Дано N конфет. 
-# Каждый игрок за каждый ход может взять не более M конфет.
-# Побеждает игрок,забравший последнюю конфету.
-
+# # Candy game. Given N candies. 
+# Each player can take no more than M candies for each turn.
+# The player who took the last candy wins.
 # man vs man
 
 import random
