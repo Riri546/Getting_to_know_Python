@@ -1,12 +1,14 @@
-# 38. Напишите программу, удаляющую из 
-# текста все слова содержащие "абв".
+# 1. Write a program that removes from text all words containing "abc".
 
-my_text = 'Напишите абв напиабв програбвмму программу, удаляющую из \
+from cgitb import text
+
+text_user = 'Напишите абв напиабв програбвмму программу, удаляющую из \
     этого абв текста все вабвс слова, содерабващие содержащие "абв"'
+print(f'Initial text: {text_user}')
 
-def del_some_words(my_text):
-    my_text = list(filter(lambda x: 'абв' not in x, my_text.split()))
-    return " ".join(my_text)
+def del_some_words(text_us):
+    text_us = list(filter(lambda x: 'абв' not in x, text_us.split()))
+    return " ".join(text_us)
 
-my_text = del_some_words(my_text)
-print(my_text)
+text_u = del_some_words(text_user)
+print(f"Corrected text: {text_u}")
