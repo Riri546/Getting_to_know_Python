@@ -1,1 +1,0 @@
-# 3. Set a list of n numbers in the sequence (1+ 1 ) and display their sum on the screen.n

@@ -1,1 +1,0 @@
-# 1. Calculate the sum of digits in a real number.
