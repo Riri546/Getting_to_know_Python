@@ -1,12 +1,10 @@
 # 7. Check the truth of the statement ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z
 # for all predicate values.
 
-print('Enter the number x: ')
-input_x = int(input())
-print('Enter the number y: ')
-input_y = int(input())
-print('Enter the number z: ')
-input_z = int(input())
+
+input_x = int(input('Enter the number x: '))
+input_y = int(input('Enter the number y: '))
+input_z = int(input('Enter the number z: '))
 
 
 def verification(x, y, z):
