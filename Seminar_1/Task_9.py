@@ -5,6 +5,8 @@
 number = int(input('Enter the quarter number: '))
 
 # The method determines the ranges x and h by the number of the quarter
+
+
 def print_answer(num):
     if num == 1:
         print("Acceptable: x>0, y>0")
