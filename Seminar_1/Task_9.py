@@ -1,8 +1,8 @@
 # 9. By specifying the number of the quarter of the rectangular coordinate system, show
 # the acceptable coordinate values for the points of this quarter
 
-print('Enter the quarter number: ')
-number = int(input())
+
+number = int(input('Enter the quarter number: '))
 
 # The method determines the ranges x and h by the number of the quarter
 def print_answer(num):
