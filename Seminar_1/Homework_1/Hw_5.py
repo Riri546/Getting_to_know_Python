@@ -1,4 +1,4 @@
-# 10. Find the distance between two points of space.
+# 5. Find the distance between two points of space.
 
 import math
 
