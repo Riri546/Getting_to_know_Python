@@ -1,10 +1,9 @@
 # 8. Tell in which quarter of the coordinate plane or on which
 # axis is the point with the X and Y coordinates.
 
-print('Enter the x coordinate: ')
-number_x = int(input())
-print('Enter the y coordinate: ')
-number_y = int(input())
+
+number_x = int(input('Enter the x coordinate: '))
+number_y = int(input('Enter the y coordinate: '))
 
 
 def checking_condition(x, y):
@@ -25,3 +24,4 @@ def checking_condition(x, y):
 
 
 checking_condition(number_x, number_y)
+-139","
