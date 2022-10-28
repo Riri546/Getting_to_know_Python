@@ -1,13 +1,15 @@
 # 3. Display the numbers from -N to N.
 
-print('Enter a negative number a: ')
-a = int(input())
-print('Enter the number b: ')
-b = int(input())
+num = int(input('Enter an integer: '))
 
-print('Answer: ')
 
-for num in range(a, b):
-    if num == b + 1:
-        continue
-    print(num+1)
+def print_num(number):
+    number = abs(number)
+    first = number * -1
+    second = number
+    while first <= second:
+        print(f'{first}, ', end='')
+        first += 1
+
+
+print_num(num)
