@@ -1,8 +1,8 @@
 # Write a program that, based on a given number of quarters,
 # shows the range of possible coordinates of points in this quarter (x and y).
 
-print('Enter the quarter number: ')
-number = int(input())
+
+number = int(input('Enter the quarter number: '))
 
 # The method determines the ranges x and h by the number of the quarter
 def print_answer(num):
