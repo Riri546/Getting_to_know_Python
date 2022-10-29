@@ -3,7 +3,9 @@
 num = float(input('Enter a fractional number: '))
 
 # num = 5,77
-round_num = int(num) #5
-result = (num - round_num)*10 #7.7
+round_num = int(num)  # 5
+result = lambda x, y: (x - y) * 10
+# result = (num - round_num)*10 #7.7
 
-print(f'The first digit of the fractional part: {int(result)}')
+
+print(f'The first digit of the fractional part: {result(num, round_num)}')

@@ -7,8 +7,6 @@ lst = ['3', '5', '6', '4', '9']
 def summ(x):
     return x + 2
 
-
-def func(x): return x + 2
 func = lambda x: x + 2
 
 res = map(int, lst)
@@ -26,3 +24,8 @@ def more_five(x):
 # print(list(res(res_map)))
 res = filter(more_five, res)
 print(list(res))
+
+# la = int(input())
+
+# f = lambda x: x - 2
+# print(f(la))
