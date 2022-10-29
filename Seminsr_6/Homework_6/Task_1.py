@@ -1,5 +1,5 @@
 # 4. Show the first digit of the fractional part of the number.
-
+#Lambda Application
 
 num = float(input('Enter a fractional number: '))
 
