@@ -3,9 +3,18 @@
 # *Example:*
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
+import math
+
+
 source_list = [1.1, 1.2, 3.1, 5, 10.01]
 print(source_list)
 
+int_lst = list(map(int, source_list))
+print(int_lst)
+
+
+# res_lst = list(set(int_lst) - set(source_list))
+# print(res_lst)
 
 
 # def max_min(max_l, min_l, s_l):
