@@ -3,13 +3,18 @@
 # * Example:*
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
+from random import randint
 
-int_list = []
-result_list = []
 
-for element in input('Enter integers in the list separated by a space: ').split():
-    int_list.append(int(element))
+int_list = [randint (0,10) for i in range(11)]
 print(int_list)
+
+# for element in input('Enter integers in the list separated by a space: ').split():
+#     int_list.append(int(element))
+# print(int_list)
+
+
+result_list = []
 
 
 for i in range((len(int_list)+1)//2):
