@@ -3,6 +3,8 @@
 # * Example:*
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
+
+
 from random import randint
 
 
