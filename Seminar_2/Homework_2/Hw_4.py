@@ -2,10 +2,12 @@
 # Find the product of the elements at the specified positions. The positions are stored
 # in a file file.txt there is one number in one line.
 
+
 n_neg = int(input('Enter a negative number: '))
 n_pos = int(input('Enter a positive number: '))
 position_1 = int(input('Enter the index of the first number: '))
 position_2 = int(input('Enter the index of the second number: '))
+
 
 list_num = [i for i in range(n_neg, n_pos+1)]
 print(list_num)
