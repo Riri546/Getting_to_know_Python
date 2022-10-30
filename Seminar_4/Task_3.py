@@ -1,7 +1,10 @@
 # 3. Specify two numbers. Write a program that will find the NOC (smallest common
 # multiple) of these two numbers.
+
+
 x = int(input('Enter the number x: '))
 y = int(input('Enter the number y: '))
+
 
 def nod(a, b):
     if b == 0:

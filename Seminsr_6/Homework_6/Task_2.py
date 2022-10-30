@@ -3,6 +3,7 @@
 # 2) using additional Python libraries.
 
 from tkinter import NO
+from functools import reduce
 
 
 a = int(input('Enter the number a: '))
@@ -11,19 +12,21 @@ c = int(input('Enter the number c: '))
 
 list1 = (a, b, c)
 
-# d = lambda a, d, c: b ** 2 - 4 * a * c
 
 def difsciminant(linput_list):
     a, b, c = linput_list
     d = b ** 2 - 4 * a * c
     if d == 0:
-        x1 =  -b / 2 * a 
+        # x1 =  -b / 2 * a 
+        x1 = lambda x, y: -y / 2 * x, a, c
         return x1, None
     elif d > 0:
-        x1 = (-b + d ** 0.5) / 2 * a
-        x2 = (-b - d ** 0.5) / 2 * a
+        # x1 = (-b + d ** 0.5) / 2 * a
+        # x2 = (-b - d ** 0.5) / 2 * a
+        x1 = lambda x, y, z: (-y + z ** 0.5) / 2 * x, a, b, d
+        x2 = lambda x, y, z:(-y - z ** 0.5) / 2 * x, a, b, d
         return x1, x2
     else:
         print('The equation has no roots')
-        
+
 print(difsciminant(list1))
