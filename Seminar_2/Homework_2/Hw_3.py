@@ -4,8 +4,8 @@
 #     [2.0, 2.25, 2.3704, 2.4414, 2.4883, 2.5216]
 #     Sum of numbers = 14.0717
 
+
 number = int(input('Enter number: '))
-sum_result = 0
 
 
 def filling_list(num):
