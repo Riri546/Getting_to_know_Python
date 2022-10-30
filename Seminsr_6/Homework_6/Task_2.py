@@ -1,32 +1,25 @@
-# 2 Find the roots of the quadratic equation Ax2 + Bx + C = 0 in two ways:
-# 1) using mathematical formulas for finding the roots of a quadratic equation;
-# 2) using additional Python libraries.
-
-from tkinter import NO
-from functools import reduce
+# 10. Find the distance between two points of space.
 
 
-a = int(input('Enter the number a: '))
-b = int(input('Enter the number b: '))
-c = int(input('Enter the number c: '))
-
-list1 = (a, b, c)
+import math
 
 
-def difsciminant(linput_list):
-    a, b, c = linput_list
-    d = b ** 2 - 4 * a * c
-    if d == 0:
-        # x1 =  -b / 2 * a 
-        x1 = lambda x, y: -y / 2 * x, a, c
-        return x1, None
-    elif d > 0:
-        # x1 = (-b + d ** 0.5) / 2 * a
-        # x2 = (-b - d ** 0.5) / 2 * a
-        x1 = lambda x, y, z: (-y + z ** 0.5) / 2 * x, a, b, d
-        x2 = lambda x, y, z:(-y - z ** 0.5) / 2 * x, a, b, d
-        return x1, x2
-    else:
-        print('The equation has no roots')
+x_a = int(input('Enter the coordinates of point a on the x axis: '))
+x_b = int(input('Enter the coordinates of point b on the x axis: '))
+y_a = int(input('Enter the coordinates of point a on the y axis: '))
+y_b = int(input('Enter the coordinates of point a on the y axis: '))
 
-print(difsciminant(list1))
+
+length = lambda a_x, a_y, b_x, b_y: math.sqrt((math.pow((a_x - b_x), 2) + math.pow((a_y - b_y), 2)))
+print(length(x_a, x_b, y_a, y_b))
+
+
+# def Calculate(x_a, x_b, y_a, y_b, length):
+#     length = math.sqrt((math.pow((x_a - x_b), 2) + math.pow((y_a - y_b), 2)))
+#     print(f'Answer: {length}')
+
+
+# Calculate(coord_x_point_a, coord_x_point_b,
+#           coord_y_point_a, coord_y_point_b,0)
+
+

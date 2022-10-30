@@ -24,4 +24,3 @@ def checking_condition(x, y):
 
 
 checking_condition(number_x, number_y)
--139","
