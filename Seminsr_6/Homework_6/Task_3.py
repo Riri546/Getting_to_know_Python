@@ -1,26 +1,35 @@
-# 3.Specify a list of real numbers. Write a program that will find the difference between the maximum
-# and minimum values of the fractional part of the elements.
-# *Example:*
-# - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+# 6. A number denoting the day of the week is given. Print its name and
+# indicate whether it is a weekend.
 
-from itertools import count
-import math
+number = int(input("Enter the name of the day of the week: "))
 
 
-source_list = [1.1, 1.2, 3.1, 5, 10.01]
-print(source_list)
+week = {'Monday': "It's a working day", 
+        'Tuesday': "It's a working day", 
+        'Wednesday': "It's a working day",
+        'Thursday': "It's a working day", 
+        'Friday': "It's a working day", 
+        'Saturday':"It's a day off!", 
+        'Sunday': "It's a day off!",
+}
 
-int_lst = map(source_list)
-print(int_lst)
+print(week())
+# if number >= 6:
+#     print(week.setdefault)
+# else:
+#     print(week.setdefault(2))
+    
+# for i in week.keys():
+#     print(i, week[i])
 
-# def max_min(max_l, min_l, s_l):
-#     for i in s_l:
-#         if i - int(i) >= max_l:
-#             max_l = i - int(i)
-#         if i - int(i) <= min_l:
-#             min_l = i - int(i)
-#     print(
-#         f'The difference between the maximum and minimum values: {max_l - min_l}')
+# def days(num):
+#     week = ['Monday', 'Tuesday', 'Wednesday',
+#             'Thursday', 'Friday', 'Saturday', 'Sunday']
+#     if num < 1 or num > 7:
+#         print('You entered an incorrect value!')
+#     elif num >= 6:
+#         print(f"{week[num-1]} It's a day off")
+#     else:
+#         print(f"{week[num-1]} It's a working day")
 
-
-# max_min(0, 1, source_list)
+# days(number)
