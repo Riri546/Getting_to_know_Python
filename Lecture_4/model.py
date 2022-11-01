@@ -1,6 +1,3 @@
-from re import X
-
-
 x = 0
 y = 0
 
