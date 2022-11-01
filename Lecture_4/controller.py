@@ -1,5 +1,5 @@
 from unittest import result
-import model_sum as model
+import model_mult as model
 import view
 
 def button_click():
@@ -7,4 +7,4 @@ def button_click():
     value_b = view.get_value()
     model.init(value_a, value_b)
     result = model.do_it()
-    view.view_data(result, 'sum')
+    view.view_data(result, 'result')
