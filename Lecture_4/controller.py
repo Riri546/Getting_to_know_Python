@@ -7,4 +7,4 @@ def button_click():
     value_b = view.get_value()
     model.init(value_a, value_b)
     result = model.mult()
-    view.view_data(result)
+    view.view_data(result, 'mult')
