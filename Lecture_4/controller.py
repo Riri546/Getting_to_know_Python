@@ -1,5 +1,5 @@
 from unittest import result
-import model_mult as model
+import model_sub as model
 import view
 
 def button_click():
