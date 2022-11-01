@@ -1,5 +1,5 @@
-def view_data(data):
-    print(f'sum = {data}')
+def view_data(data, titel):
+    print(f'{titel} = {data}')
 
 def get_value():
     return int(input('value = '))
