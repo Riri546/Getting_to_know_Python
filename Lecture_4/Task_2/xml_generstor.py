@@ -10,7 +10,7 @@ def create(device = 1):
         .format(wind_speed_view(device))
     xml += '  <pressure units = "mmHg">{}</pressure >\n'\
         .format(preassure_view(device))
-    html += '  </xml>'
+    xml += '  </xml>'
 
     with open('data.xml', 'w') as page:
         page.write(xml)
