@@ -18,5 +18,5 @@ def get_wind_speed(sensor):
     else:
         return randint(30, 50)
 
-def data_collection():
-    return (get_temperature(), get_preassure(), get_wind_speed())
+def data_collection(sensor = 1):
+    return (get_temperature(sensor), get_preassure(sensor), get_wind_speed(sensor))
