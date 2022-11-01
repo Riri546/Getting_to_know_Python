@@ -30,6 +30,6 @@ def new_create(data, device=1):
         .format(p)
     xml += '  </xml>'
 
-    with open('data.xml', 'w') as page:
+    with open('new_data.xml', 'w') as page:
         page.write(xml)
     return data
