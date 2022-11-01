@@ -14,6 +14,6 @@ def div_num(x, y):
     return x / y
 
 
-x = complex(5, 5)
-y = complex(5, 5)
+x = complex()
+y = complex()
 print(sum_num(x, y))

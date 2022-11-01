@@ -1,5 +1,5 @@
-def view_data(data, titel):
-    print(f'{titel} = {data}')
+def view_data(title, data):
+    print(f'{title} = {data}')
 
 
 def get_value():
@@ -8,5 +8,3 @@ def get_value():
 def get_operation():
     return input('operation = ')
 
-qwe = '1+5j'
-print(get_value())
