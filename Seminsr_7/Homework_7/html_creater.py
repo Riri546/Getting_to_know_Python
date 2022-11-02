@@ -1,6 +1,24 @@
-# from user_interface import temperature_view
-# from user_interface import wind_speed_view
-# from user_interface import preassure_view
+from user_interface import surname_view as sn
+from user_interface import name_view as n
+from user_interface import telephon_view as tel
+from user_interface import description_view as dasc
+
+def create():
+    style = 'style ="font-size:30px;"'
+    html = '<html>\n <head></head>\n <body>\n'
+    html += '  <p {}>Surname_: {} c</p>\n'\
+        .format(style, sn())
+    html += '  <p {}>Name_: {} m/c</p>\n'\
+        .format(style, n())
+    html += '  <p {}>PTelephon: {} mmHg</p>\n'\
+        .format(style, tel())
+    html += '  <p {}>PDescription: {} mmHg</p>\n'\
+        .format(style, dasc())
+    html += '  </body>\n</html>'
+
+    with open('tel_index.html', 'a') as page:
+        page.write(html)
+    return html
 
 
 # def create(device=1):

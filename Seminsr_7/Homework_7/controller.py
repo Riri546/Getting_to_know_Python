@@ -1,5 +1,6 @@
 import logger as log
 import data_provider as dp
+import html_creater as hc
 
 
 def button_click():
@@ -11,6 +12,7 @@ def button_click():
     log.name_logger(name)
     log.telephon_logger(tel)
     log.description_logger(dasc)
+    hc.create()
 
     # value_a = view.get_value(1)
     # value_b = view.get_value(2)
