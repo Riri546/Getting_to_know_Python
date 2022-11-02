@@ -1,7 +1,5 @@
 import logger as log
-import json_logger as jl
 import data_provider as dp
-
 
 
 def button_click():
@@ -14,8 +12,3 @@ def button_click():
     log.name_logger(name)
     log.telephon_logger(tel)
     log.description_logger(dasc)
-    
-    # jl.surname_json(surname)
-    # jl.name_json(name)
-    # jl.telephon_json(tel)
-    # jl.description_json(dasc)

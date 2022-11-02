@@ -16,4 +16,3 @@ def telephon_use():
 def description_use():
     desc = input("Enter a description for the contact: ")
     return desc
-

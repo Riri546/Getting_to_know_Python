@@ -1,6 +1,7 @@
 import data_provider as dp
 import logger as log
 
+
 def surname_view(fam):
     data = dp.surname_use(fam)
     log.surname_logger(data)
@@ -23,4 +24,3 @@ def description_view(desc):
     data = dp.description_use(desc)
     log.description_logger(data)
     return data
-
