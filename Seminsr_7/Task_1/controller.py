@@ -15,5 +15,6 @@ def button_click():
         result = mod.div_num(value_a, value_b)
     elif operator == '*':
         result = mod.mult_num(value_a, value_b)
-    
-    view.view_data(f'{value_a} {operator} {value_b} ', result)
+    op = '{value_a} {operator} {value_b}'
+    view.view_data(op, result)
+    log
