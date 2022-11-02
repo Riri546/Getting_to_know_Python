@@ -1,6 +1,3 @@
-from telnetlib import SGA
-import html_creater as hc
-import xml_generstor as xg
 import data_provider as dp
 
 print(dp.surname_use())
