@@ -1,11 +1,12 @@
 from pyexpat import model
 import model as mod
 import view
+import logger as log
 
 
 def button_click():
-    value_a = view.get_value()
-    value_b = view.get_value()
+    value_a = view.get_value(1)
+    value_b = view.get_value(2)
     operator = view.get_operation()
     if operator == '+':
         result = mod.sum_num(value_a, value_b)
@@ -15,6 +16,6 @@ def button_click():
         result = mod.div_num(value_a, value_b)
     elif operator == '*':
         result = mod.mult_num(value_a, value_b)
-    op = '{value_a} {operator} {value_b}'
+    op = f'{value_a} {operator} {value_b}'
     view.view_data(op, result)
-    log
+    log.operation_logger(op, result)
