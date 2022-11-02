@@ -12,7 +12,6 @@ def button_click():
     log.telephon_logger(tel)
     log.description_logger(dasc)
 
-
     # value_a = view.get_value(1)
     # value_b = view.get_value(2)
     # operator = view.get_operation()

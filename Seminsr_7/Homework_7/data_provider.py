@@ -17,6 +17,3 @@ def description_use():
     desc = input("Enter a description for the contact: ")
     return desc
 
-
-def data_collection():
-    return (surname_use(), name_use(), telephon_use(), description_use())
