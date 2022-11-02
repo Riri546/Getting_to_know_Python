@@ -1,12 +1,4 @@
-import data_provider as dp
+import controller as c
 
-print(dp.surname_use())
-print(dp.name_use())
-print(dp.telephon_use())
-print(dp.description_use())
+c.button_click()
 
-
-# print(hc.create())
-# print(xg.create())
-
-# hc.new_create(xg.new_create(dp.data_collection()))

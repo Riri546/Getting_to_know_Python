@@ -7,6 +7,10 @@ def button_click():
     name = dp.name_use()
     tel = dp.telephon_use()
     dasc = dp.description_use()
+    log.surname_logger(surname)
+    log.name_logger(name)
+    log.telephon_logger(tel)
+    log.description_logger(dasc)
 
 
     # value_a = view.get_value(1)
