@@ -2,7 +2,6 @@ def surname_use(fam):
     fam = input("Enter the contact's last name: ")
     return fam
 
-
 def name_use(name):
     name = input("Enter the name of the contact: ")
     return name
