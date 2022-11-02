@@ -1,18 +1,18 @@
 def surname_logger(data):
-    with open('log_telephone_directory.csv', 'a') as file:
-        file.write(f'surname: {data}\n')
+    with open('log_telephone.csv', 'a') as file:
+        file.write(f'Surname: {data}\n')
 
 
 def name_logger(data):
-    with open('log_telephone_directory.csv', 'a') as file:
-        file.write(f'name: {data}\n')
+    with open('log_telephone.csv', 'a') as file:
+        file.write(f'Name: {data}\n')
 
 
 def telephon_logger(data):
-    with open('log_telephone_directory.csv', 'a') as file:
-        file.write(f'telephon: {data}\n')
+    with open('log_telephone.csv', 'a') as file:
+        file.write(f'Telephon: {data}\n')
 
 
 def description_logger(data):
-    with open('log_telephone_directory.csv', 'a') as file:
-        file.write(f'description: {data}\n''\n')
+    with open('log_telephone.csv', 'a') as file:
+        file.write(f'Description: {data}\n''\n')

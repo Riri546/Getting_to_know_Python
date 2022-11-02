@@ -1,24 +1,20 @@
-from user_interface import surname_view as sn
-from user_interface import name_view as n
-from user_interface import telephon_view as tel
-from user_interface import description_view as dasc
+# from user_interface import surname_view as sn
+# from user_interface import name_view as n
+# from user_interface import telephon_view as tel
+# from user_interface import description_view as dasc
 
-def create():
-    style = 'style ="font-size:30px;"'
-    html = '<html>\n <head></head>\n <body>\n'
-    html += '  <p {}>Surname_: {} c</p>\n'\
-        .format(style, sn())
-    html += '  <p {}>Name_: {} m/c</p>\n'\
-        .format(style, n())
-    html += '  <p {}>PTelephon: {} mmHg</p>\n'\
-        .format(style, tel())
-    html += '  <p {}>PDescription: {} mmHg</p>\n'\
-        .format(style, dasc())
-    html += '  </body>\n</html>'
+# def create():
+#     style = 'style ="font-size:30px;"'
+#     html = '<html>\n <head></head>\n <body>\n'
+#     html += f'Surname: {style}, {sn()}\n'
+#     html += f'Name: {style}, {n()}\n'
+#     html += f'Telephon: {style}, {tel()}\n'
+#     html += f'Description: {style}, {dasc()}\n'
+#     html += '  </body>\n</html>'
 
-    with open('tel_index.html', 'a') as page:
-        page.write(html)
-    return html
+#     with open('tel_index.html', 'w') as page:
+#         page.write(html)
+#     return html
 
 
 # def create(device=1):
