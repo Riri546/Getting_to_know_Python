@@ -1,87 +1,110 @@
 import sqlite3
 
 
-bd = sqlite3.connect("Data_base.db")
-
-
-cursor = bd.cursor()
-
-
-cursor.execute('''CREATE TABLE IF NOT EXISTS personal(
-    id INTEGER PRIMARY KEY autoincrement,
-    name TEXT,
-    last_name TEXT,
-    position TEXT,
-    salary INT,
-    bonus INT
-)''')
-
-
-baza = [(1, 'Иван', 'Иванов', 'главный инженер', 500000, 10000),
-        (2, 'Вадим', 'Корпатый', 'инженер', 551100, 2300),
-        (3, 'Грегорий', 'Саломохин', 'бухгалтер', 230000, 100)]
-
 try:
-    cursor.executemany('INSERT INTO personal VALUES(?,?,?,?,?,?)', baza)
-    bd.commit()
-except:
-    print('Данные уже есть')
+    sqlite_connection = sqlite3.connect('sqlite_python.db')
+    cursor = sqlite_connection.cursor()
+    print("Подключен к SQLite")
+
+    sqlite_insert_query = """INSERT INTO sqlitedb_developers
+                            (id, name, email, joining_date, salary)
+                            VALUES
+                            (1, 'Oleg', 'oleg04@gmail.com', '2020-11-29', 8100);"""
+    count = cursor.execute(sqlite_insert_query)
+    sqlite_connection.commit()
+    print("Запись успешно вставлена ​​в таблицу sqlitedb_developers ", cursor.rowcount)
+    cursor.close()
+    
+except sqlite3.Error as error:
+    print("Ошибка при работе с SQLite", error)
+finally:
+    if sqlite_connection:
+        sqlite_connection.close()
+        print("Соединение с SQLite закрыто")
+
+# bd = sqlite3.connect("Data_base.db")
 
 
-# cursor.execute('DELETE from personal WHERE')
+# cursor = bd.cursor()
 
 
-cursor.execute('select * from personal WHERE id=2;')
-one = cursor.fetchone()
-print(one)
+# cursor.execute('''CREATE TABLE IF NOT EXISTS personal(
+#     id INTEGER PRIMARY KEY autoincrement,
+#     name TEXT,
+#     last_name TEXT,
+#     position TEXT,
+#     salary INT,
+#     bonus INT
+# )''')
 
 
-def previev_base():
-    for i in cursor.execute('SELECT * FROM personal'):
-        print(*i)
+# baza = [(1, 'Иван', 'Иванов', 'главный инженер', 500000, 10000),
+#         (2, 'Вадим', 'Корпатый', 'инженер', 551100, 2300),
+#         (3, 'Грегорий', 'Саломохин', 'бухгалтер', 230000, 100)]
+
+# try:
+#     cursor.executemany('INSERT INTO personal VALUES(?,?,?,?,?,?)', baza)
+#     bd.commit()
+# except:
+#     print('Данные уже есть')
 
 
-def add_record():
-    pass
+# # cursor.execute('DELETE from personal WHERE')
 
 
-def delete_record(id):
-    cursor.execute(f'DELETE from personal WHERE id={id}')
-    bd.commit()
+# cursor.execute('select * from personal WHERE id=2;')
+# one = cursor.fetchone()
+# print(one)
 
 
-def find_record(column, nam):
-    cursor.execute(f'select * from personal WHERE {column} LIKE "{nam}";')
-    one = cursor.fetchmany()
-    return one
+# def previev_base():
+#     for i in cursor.execute('SELECT * FROM personal'):
+#         print(*i)
 
 
-for i in cursor.execute('SELECT * FROM personal'):
-    print(*i)
+# def add_record():
+#     pass
 
 
-def input_choice():
-    while True:
-        user_choice = input(
-            '1 - просмотретьь базу, 2 - добавить запись, 3 - удалить запись, 4 найти по ФИО, q - выход')
-        if user_choice == '1':
-            previev_base()
-        elif user_choice == '2':
-            add_record()
-        elif user_choice == '3':
-            delete_record()
-        elif user_choice == '4':
-            find_record()
-        elif user_choice == 'q':
-            print('Выход')
-            break
-        else:
-            print('Не верно выбран режим работы')
+# def delete_record(id):
+#     cursor.execute(f'DELETE from personal WHERE id={id}')
+#     bd.commit()
 
 
-cursor.execute('UPDATE personal SET salary = 515655 WHERE id=2;')
-bd.commit()
+# def find_record(column, nam):
+#     cursor.execute(f'select * from personal WHERE {column} LIKE "{nam}";')
+#     one = cursor.fetchmany()
+#     return one
 
 
-for i in cursor.execute('SELECT * FROM personal'):
-    print(*i)
+# for i in cursor.execute('SELECT * FROM personal'):
+#     print(*i)
+
+
+# def input_choice():
+#     while True:
+#         user_choice = input(
+#             '1 - просмотретьь базу, 2 - добавить запись, 3 - удалить запись, 4 найти по ФИО, q - выход')
+#         if user_choice == '1':
+#             previev_base()
+#         elif user_choice == '2':
+#             add_record()
+#         elif user_choice == '3':
+#             delete_record()
+#         elif user_choice == '4':
+#             find_record()
+#         elif user_choice == 'q':
+#             print('Выход')
+#             break
+#         else:
+#             print('Не верно выбран режим работы')
+
+
+# cursor.execute('UPDATE personal SET salary = 515655 WHERE id=2;')
+# bd.commit()
+
+
+# for i in cursor.execute('SELECT * FROM personal'):
+#     print(*i)
+
+
