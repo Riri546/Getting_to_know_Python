@@ -23,4 +23,4 @@ try:
     cursor.executemany('INSERT INTO personal VALUES(?,?,?,?,?,?)', baza)
     bd.commit()
 except:
-    print('Данные уже есть')
+    print('Данные уже есть\n')
