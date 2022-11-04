@@ -9,7 +9,8 @@ def previev_base():
 
 def add_record(id, name, last_name, age, position, salary, bonus):
     data_prov.cursor.execute("SELECT * FROM personal")
-    data_prov.cursor.executemany('INSERT INTO personal VALUES(?,?,?,?,?,?,?)',id, name, last_name, age, position, salary, bonus)   
+    baza = [id, name, last_name, age, position, salary, bonus]
+    data_prov.cursor.executemany('INSERT INTO personal VALUES(?)', baza)   
     data_prov.bd.commit()
 
 
