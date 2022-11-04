@@ -2,7 +2,7 @@ import sqlite3
 import model as mod
 
 
-def input_choice():
+def button_click():
     while True:
         user_choice = input(
             '1 - просмотретьь базу, 2 - добавить запись, 3 - удалить запись, 4 найти по ФИО, q - выход')
