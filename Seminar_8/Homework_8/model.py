@@ -7,10 +7,10 @@ def previev_base():
         print(*i)
 
 
-# def add_record(id, name, last_name, age, position, salary, bonus):
-#     data_prov.cursor.execute("SELECT * FROM personal")
-#     data_prov.cursor.executemany('INSERT INTO personal VALUES(?,?,?,?,?,?)',id, name, last_name, age, position, salary, bonus)   
-#     data_prov.bd.commit()
+def add_record(id, name, last_name, age, position, salary, bonus):
+    data_prov.cursor.execute("SELECT * FROM personal")
+    data_prov.cursor.executemany('INSERT INTO personal VALUES(?,?,?,?,?,?,?)',id, name, last_name, age, position, salary, bonus)   
+    data_prov.bd.commit()
 
 
 def delete_record(id):

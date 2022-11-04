@@ -10,12 +10,21 @@ def button_click():
         if user_choice == '1':
             mod.previev_base()
         elif user_choice == '2':
-            mod.add_record()
+            id = input('\nВведите идентификационный номер сотрудника: ')
+            name = input('\nВведите имя сотрудника: ')
+            last_name = input('\nВведите фамилтию сотрудника: ')
+            age = input('\nВведите возраст сотрудника: ')
+            position = input('\nВведите должность сотрудника: ')
+            salary = input('\nВведите размер заработной платы сотрудника: ')
+            bonus = input('\nВведите размер премии: ')
+            mod.add_record(id, name, last_name, age, position, salary, bonus)
         elif user_choice == '3':
             id = input('Введите идентификационный номер сотрудника: ')
             mod.delete_record(id)
         elif user_choice == '4':
-            mod.find_record()
+            column = input('Введите название колонки:')
+            nam = ('Введите данные для изменения')
+            mod.find_record(column, nam)
         elif user_choice == 'q':
             print('Выход')
             break
