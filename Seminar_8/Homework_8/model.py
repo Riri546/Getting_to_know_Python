@@ -13,7 +13,9 @@ def add_record():
 
 def delete_record(id):
     data_prov.cursor.execute(f'DELETE from personal WHERE id={id}')
+    print(f'Удален сотрудник с идентификационным номером {id}')
     data_prov.bd.commit()
+
     
 
 
