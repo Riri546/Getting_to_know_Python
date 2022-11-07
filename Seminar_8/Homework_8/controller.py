@@ -1,30 +1,25 @@
 import sqlite3
 import model as mod
-import data_provider as data_prov
-
 
 def button_click():
     while True:
         user_choice = input(
-            '1 - просмотреть базу\n2 - добавить запись\n3 - удалить запись\n4 - найти по ФИО\nq - выход\n')
+            '1 - просмотреть базу\n2 - добавить запись\n3 - удалить запись\n4 - изменение размера оклада\n5 - измение размера премии\nq - выход\n')
         if user_choice == '1':
             mod.previev_base()
         elif user_choice == '2':
-            id = input('\nВведите идентификационный номер сотрудника: ')
-            name = input('\nВведите имя сотрудника: ')
-            last_name = input('\nВведите фамилтию сотрудника: ')
-            age = input('\nВведите возраст сотрудника: ')
-            position = input('\nВведите должность сотрудника: ')
-            salary = input('\nВведите размер заработной платы сотрудника: ')
-            bonus = input('\nВведите размер премии: ')
-            mod.add_record(id, name, last_name, age, position, salary, bonus)
+            mod.add_record()
         elif user_choice == '3':
             id = input('Введите идентификационный номер сотрудника: ')
             mod.delete_record(id)
         elif user_choice == '4':
-            column = input('Введите название колонки:')
-            nam = ('Введите данные для изменения')
-            mod.find_record(column, nam)
+            id = input('Введите идентификационный номер сотрудника: ')
+            salary = input('Введите новую сумму оклада сотрудника: ')
+            mod.salary_record(id, salary)
+        elif user_choice == '5':
+            id = input('Введите идентификационный номер сотрудника: ')
+            bonus = input('Введите новую сумму премии сотрудника: ')
+            mod.bonus_record(id, bonus)
         elif user_choice == 'q':
             print('Выход')
             break
