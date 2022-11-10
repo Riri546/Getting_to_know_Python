@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\LLosh\OneDrive\Рабочий стол\Getting_to_know_Python\.fol"
+VIRTUAL_ENV="C:\Users\LLosh\OneDrive\Рабочий стол\Getting_to_know_Python\Seminar_9\Homework_9\.folder"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -54,7 +54,7 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
-    PS1="(.fol) ${PS1:-}"
+    PS1="(.folder) ${PS1:-}"
     export PS1
 fi
 
