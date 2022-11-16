@@ -34,11 +34,9 @@ def f(x):
         numpy.cos(x)) - 18 * x ** 3 + 5 * x ** 2 + 10 * x - 30
 
 
-
 funcrange = [-10, 10]
 leftnum = min(funcrange)
 rightnum = max(funcrange)
-
 
 
 def solution():
